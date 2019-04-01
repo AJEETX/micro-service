@@ -4,9 +4,9 @@ const service=require('./service')
 
 const requestHandler =async (request, response) => {
     let result='';
-    if(request.method=='POST'){
-        console.log(` body ${request.body}`)
-    }
+
+    console.log(` body ${request.method}`)
+
     try{
         result =await service(request,response);
 
